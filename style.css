@@ -36,95 +36,186 @@ body{margin:0;font-family:Arial,"Noto Sans Bengali",sans-serif;background:#17387
  .join-row strong{font-size:18px}.join-btn{font-size:18px;padding:9px 18px}.understood{font-size:23px}
 }
 
-```css
-/* ===== Mobile Responsive Fix ===== */
+/* ===== Mobile Responsive ===== */
 
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-body {
-    margin: 0;
-}
-
-/* Main app container */
-.container,
-.app-container,
-.main-container {
-    width: 100%;
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Mobile */
 @media (max-width: 600px) {
 
-    body {
-        font-size: 14px;
+    .app {
+        max-width: 100%;
+        padding: 12px 12px 82px;
     }
 
-    .container,
-    .app-container,
-    .main-container {
-        width: 100%;
-        max-width: 430px;
-        padding-left: 12px;
-        padding-right: 12px;
+    .top {
+        margin: 4px 0 14px;
     }
 
-    h1 {
-        font-size: 24px;
+    .brand {
+        font-size: 21px;
     }
 
-    h2 {
-        font-size: 20px;
+    .top h2 {
+        font-size: 18px;
     }
 
-    h3 {
+    .avatar {
+        width: 42px;
+        height: 42px;
         font-size: 17px;
     }
 
-    button,
-    .btn {
-        min-height: 42px;
-        padding: 10px 14px;
-        font-size: 14px;
-    }
-
-    input,
-    select,
-    textarea {
-        font-size: 14px;
-        padding: 10px;
-    }
-
     .card {
-        padding: 14px;
-        border-radius: 12px;
+        padding: 13px;
+        margin: 9px 0;
+        border-radius: 14px;
     }
 
-    .modal {
-        width: calc(100% - 24px);
-        max-width: 400px;
-        margin: auto;
+    .money {
+        font-size: 29px;
+        margin: 6px 0 12px;
     }
 
-    img {
+    .stats {
+        font-size: 12px;
+    }
+
+    .task button,
+    .card button {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    input {
+        padding: 11px;
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin: 14px 2px 7px;
+    }
+
+    .bottom {
         max-width: 100%;
-        height: auto;
+        padding: 6px;
+    }
+
+    .bottom button {
+        font-size: 18px;
+    }
+
+    .bottom small {
+        font-size: 9px;
+    }
+
+    /* Notification */
+    .notice-overlay {
+        padding: 12px;
+    }
+
+    .notice-card {
+        width: 100%;
+        max-height: 90vh;
+        border-radius: 28px;
+        padding: 55px 16px 22px;
+        border-width: 4px;
+    }
+
+    .notice-icon-wrap {
+        width: 105px;
+        height: 105px;
+        top: -38px;
+        border-width: 5px;
+    }
+
+    .notice-icon {
+        font-size: 50px;
+    }
+
+    .bell {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+        border-width: 3px;
+    }
+
+    .notice-card h1 {
+        font-size: 30px;
+        margin: 48px 0 16px;
+    }
+
+    .notice-message {
+        font-size: 16px;
+        line-height: 1.55;
+        padding: 16px 14px;
+        border-radius: 18px;
+    }
+
+    .join-title {
+        font-size: 17px;
+        margin: 22px 0 9px;
+    }
+
+    .join-row {
+        gap: 8px;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 18px;
+    }
+
+    .telegram-circle {
+        flex: 0 0 43px;
+        width: 43px;
+        height: 43px;
+        font-size: 23px;
+    }
+
+    .join-row strong {
+        font-size: 15px;
+    }
+
+    .join-btn {
+        font-size: 14px;
+        padding: 8px 13px;
+        border-radius: 11px;
+    }
+
+    .understood {
+        font-size: 18px;
+        padding: 15px 8px;
+        margin-top: 20px;
+        border-width: 4px;
+        border-radius: 18px;
     }
 }
 
-/* Small phones */
+/* Extra small phones */
 @media (max-width: 380px) {
+
+    .app {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .brand {
+        font-size: 19px;
+    }
+
+    .money {
+        font-size: 27px;
+    }
+
+    .card {
+        padding: 11px;
+    }
+
+    .notice-card h1 {
+        font-size: 27px;
+    }
+
+    .notice-message {
+        font-size: 15px;
+    }
+}
 
     body {
         font-size: 13px;
