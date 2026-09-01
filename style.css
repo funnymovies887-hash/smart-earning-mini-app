@@ -35,3 +35,130 @@ body{margin:0;font-family:Arial,"Noto Sans Bengali",sans-serif;background:#17387
  .join-title{font-size:19px}.join-row{gap:10px;padding:13px 11px}.telegram-circle{flex-basis:53px;width:53px;height:53px;font-size:27px}
  .join-row strong{font-size:18px}.join-btn{font-size:18px;padding:9px 18px}.understood{font-size:23px}
 }
+
+```css
+/* ===== Mobile Responsive Fix ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+/* Main app container */
+.container,
+.app-container,
+.main-container {
+    width: 100%;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .container,
+    .app-container,
+    .main-container {
+        width: 100%;
+        max-width: 430px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    button,
+    .btn {
+        min-height: 42px;
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .card {
+        padding: 14px;
+        border-radius: 12px;
+    }
+
+    .modal {
+        width: calc(100% - 24px);
+        max-width: 400px;
+        margin: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+
+    body {
+        font-size: 13px;
+    }
+
+    .container,
+    .app-container,
+    .main-container {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    button,
+    .btn {
+        min-height: 40px;
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    .card {
+        padding: 12px;
+    }
+}
+```
+
