@@ -1,3 +1,4 @@
+const API_BASE = "https://smart-earning-api.funnymovies887.workers.dev";
 // Change these two links to your real Telegram group/channel links.
 const GROUP_1_URL = "https://t.me/your_group";
 const GROUP_2_URL = "https://t.me/your_channel";
