@@ -46,7 +46,7 @@ function render(data) {
 
 async function load() {
   try {
-    const data = await api("/api/me");
+    const data = await api("/api/user");
     render(data);
   } catch (e) {
     document.getElementById("name").textContent = "Open this app from Telegram";
