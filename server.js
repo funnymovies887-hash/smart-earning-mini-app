@@ -280,8 +280,7 @@ if (BOT_TOKEN) {
     bot.launch().then(() => console.log("Bot polling started")).catch(console.error);
   }
 
-  process.once("SIGINT", () => bot.stop("SIGINT"));
-  process.once("SIGTERM", () => bot.stop("SIGTERM"));
+  
 }
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
