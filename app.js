@@ -13,7 +13,7 @@ const initData = tg?.initData || "";
 const headers = {"Content-Type":"application/json","X-Telegram-Init-Data":initData};
 
 async function api(url, options={}) {
-  const r = await fetch(url, {...options, headers:{...headers,...(options.headers||{})}});
+  const r = await fetch(API_BASE + url, {...options, headers:{...headers,...(options.headers||{})}});
   const data = await r.json().catch(()=>({}));
   if (!r.ok) throw new Error(data.error || "Request failed");
   return data;
